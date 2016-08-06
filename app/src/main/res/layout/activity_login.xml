@@ -1,0 +1,135 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom_font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg_focused">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_mob"
+            style="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/TextInputLayout"
+            >
+
+            <com.patelapp.Custom.CustomEditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_mobile"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:singleLine="true"
+                android:theme="@style/MyEditText"
+                custom_font:custom_font="@string/font_clan_pro_narrbok"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextLabel"
+           app:hintTextAppearance="@style/TextInputLayout"
+            >
+
+            <com.patelapp.Custom.CustomEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLength="14"
+                android:textColor="@color/white"
+                android:textColorHint="@color/text_hint"
+                android:theme="@style/MyEditText"
+                custom_font:custom_font="@string/font_clan_pro_narrbok"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <com.patelapp.Custom.CustomButton
+            android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/button"
+            android:text="@string/btn_log_in"
+            android:textColor="@drawable/text_color"
+            custom_font:custom_font="@string/font_clan_pro_narrbok"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:gravity="center|left">
+
+                <com.patelapp.Custom.CustomTextView
+                    android:id="@+id/tv_forgot"
+                    style="@style/textview"
+                    android:clickable="true"
+                    android:text="@string/forgot"
+                    custom_font:custom_font="@string/font_clan_pro_narrbok"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:gravity="center|right">
+
+                <com.patelapp.Custom.CustomTextView
+                    android:id="@+id/tv_register"
+                    style="@style/textview"
+                    android:clickable="true"
+                    android:text="@string/register"
+                    custom_font:custom_font="@string/font_clan_pro_narrbok"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.patelapp.Custom.CustomTextView
+                android:id="@+id/tv_skipp"
+                style="@style/textview"
+                android:clickable="true"
+                android:text="@string/skipp"
+                custom_font:custom_font="@string/font_clan_pro_narrbok"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news_fragment"
+            android:icon="@drawable/news"
+            android:title="@string/nav1" />
+        <item
+            android:id="@+id/nav_store_fragment"
+            android:icon="@drawable/store"
+            android:title="@string/nav2"  />
+        <item
+            android:id="@+id/nav_gallery_fragment"
+            android:icon="@drawable/gallery"
+            android:title="@string/nav3" />
+        <item
+            android:id="@+id/nav_directory_fragment"
+            android:icon="@drawable/directory"
+            android:title="@string/nav4" />
+        <item
+            android:id="@+id/nav_user_fragment"
+            android:icon="@drawable/user"
+            android:title="@string/nav5" />
+
+        <item
+            android:id="@+id/nav_aboutus_fragment"
+            android:icon="@drawable/about"
+            android:title="@string/nav6" />
+        <item
+            android:id="@+id/nav_setting_fragment"
+            android:icon="@drawable/setting"
+            android:title="@string/nav7" />
+    </group>
+</menu>

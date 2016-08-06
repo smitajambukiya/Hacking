@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom_font="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lnAnim"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivFeed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:scaleType="center"
+                android:src="@drawable/no_image_user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.patelapp.Custom.CustomTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="@string/gujarati_text"
+                android:textColor="@color/black_light"
+                android:textSize="18sp"
+                />
+
+            <com.patelapp.Custom.CustomTextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="2"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                />
+
+            <com.patelapp.Custom.CustomTextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center|right"
+                android:singleLine="true"
+                android:text="14-02-2016"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                custom_font:custom_font="@string/font_clan_pro_narrbok" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

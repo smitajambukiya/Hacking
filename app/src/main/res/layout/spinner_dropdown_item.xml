@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.patelapp.Custom.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center|left"
+    android:padding="5dp"
+    android:text="Ahmedabda"
+    android:textColor="@android:color/black"
+    app:custom_font="@string/font_clan_pro_narrbok" />
